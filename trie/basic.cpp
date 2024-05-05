@@ -49,3 +49,16 @@ void insert(TrieNode* node,string& word, int i) {
             return search(node->children[idx], word, i + 1);
         }
 }
+
+// iterative version of insert function
+void add(TrieNode* node,string& word){
+    TrieNode* curr=node;
+    for(int i=0;i<word.size();i++){
+        int ind=word[i]-'a';
+        if(curr->children[ind]==NULL){
+            curr->children[ind]=new TrieNode();
+        }
+        curr=curr->children[ind];
+    }
+    curr->isEnd=true;
+}
