@@ -1,3 +1,5 @@
+// seg is the tree which we are building for the nums array
+// pos is the index of seg where we are storing range value from left to right
 void buildTree(vector<int>& seg,vector<int>&nums, int pos, int left, int right){
         if (left == right){
             seg[pos] = nums[left]; 
