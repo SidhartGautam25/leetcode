@@ -50,3 +50,14 @@ public:
         
     }
 };
+
+// solution 2
+
+// here we are taking every little profit at every point and addind it to final ans
+
+int maxProfit(vector<int> &prices) {
+    int ret = 0;
+    for (size_t p = 1; p < prices.size(); ++p) 
+      ret += max(prices[p] - prices[p - 1], 0);    
+    return ret;
+}
