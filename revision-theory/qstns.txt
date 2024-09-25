@@ -1,1 +1,33 @@
 1. best time to buy and sell stock 2 
+2. trapping rain water
+         1. first approach is standard
+         2. second approach is similar to area of histogram
+3. Container with most water
+         1. first approach is very similar to second approach of prev qstn
+    Related Problems:
+         1. House Robber 4
+
+
+                    -----------> Interval Problems <------------
+    
+
+    4. Summary ranges
+        Related Problems:
+            1. Missing ranges
+            2. Find Maximal Uncovered Ranges
+
+
+    5. Merge Intervals
+            1. first solution is easy to emplement using sorting
+            2. Can be solved using BST(havent tried yet)
+
+        Related Problems
+            1.Meetings Room
+            2.Meetings Room 2
+            3.Amount of new area painted each day
+            4.longest substring of one repeating characters
+            5.count integers in Intervals
+            6.divide intervals in minimum number of groups
+            7.count ways to group overlapping intervals
+            8.Count days without meetings
+    6. Insert Interval
