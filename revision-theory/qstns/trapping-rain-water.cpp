@@ -31,6 +31,18 @@ public:
 // we used in area of histogram question and for exactly same purpose
 // we are eliminating the side which is smaller as it is not responsible 
 // for getting our answer
+// let say l is 5 and r is 10,then we know that between them,chahe kuch bhi ho 5 height
+// tk to paani aayega hi chahe kuch bhi ho jae.to ab l ko bdha denge,aisa islie kuki
+// 5 wala block apna input to de hi dia,ab agr r ko move kre or l ko rhne de tobhi 
+// 5 se jaida height ka paani nhi store kr sakte,kuki l to 5 hi rhega to agr r ka value 
+// move hone ke baad bdha bhi tb bhi 5 height tk hi paani store kr payenge,
+// or agar l ko bdhaye to ho ho sakta hai ki l ka height kahi 7 bhi mile,to uske or r 
+// 10 ke bich me ab height 7 tk paani bhar sakte hai,or agr l ka height or kam mila,
+// maanlo 3 to bhi l ko 5 hi rkhenge kuki wo jaida bd hai or hmko pta hai min 5 tk to store
+// krega hi 
+
+// so whenever we have to main two arrays of max for left side and right side,we can 
+// use this two pointer concept to do that in O(1) time complexity
 class Solution {
 public:
     int trap(vector<int>& height) {
