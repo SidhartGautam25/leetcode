@@ -31,3 +31,29 @@
             7.count ways to group overlapping intervals
             8.Count days without meetings
     6. Insert Interval
+            1. first solution is very logical and basic
+            2. Can be solved with binary search
+
+    7. Minimum Number of Arrows to Burst Balloons
+            1. Very clear and self written
+            2. Based on Activity selection Algorithm
+                   Related Problem on this Algorithm
+                        1.Maximum Length of Pair Chain
+                        2.Maximum nuumber of intervals
+    
+    8. Maximum Number of Pair chain(Same as Maximum number of intervals)
+           1. Exactly same code as max number of arrows 
+               Simply because they share same idea of activity selection Algorithm
+               (Read the solution 3 of Minimum Number of Arrows To Burts Balloons)
+           2. Can be solved using DP
+                   With DP approach,this question is similar to
+                           1.LIS(Longest Increasing Subsequence)
+                           
+        Related Problems:
+            1. Longest Non-decreasing Subarray from two arrays
+
+
+
+
+9. Maximum Subarray
+       1. Using kadane Algorithm
