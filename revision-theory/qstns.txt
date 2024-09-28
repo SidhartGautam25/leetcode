@@ -57,3 +57,19 @@
 
 9. Maximum Subarray
        1. Using kadane Algorithm
+       2. can be solved using dp and recursion
+       3. dp[i] stores ans ending subarray ending at i technique dp solution
+
+10. Maximum Sum Circular Subarray
+11. Gas Station
+       1. Unique one
+       2. maintain local and global state
+       3. 
+
+12. Candy 
+       1. peak and valley Problem
+       2. solution 1 -> two pass and O(n) solution greedy
+       3. solution 2 -> one pass and O(1) space
+
+13.  Non-decreasing Array
+    

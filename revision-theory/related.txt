@@ -1,0 +1,18 @@
+1. Minimize Maximum Pair Sum in Array
+        1.the latest time to catch a Bus
+        2.maximum number of potholes that can be fixed
+
+2. Minimum Moves to Equal Array Elements
+        1. maximum running time of n computers
+        2. pour water between buckets to make water level Equal
+        3. divide player into teams of equal skill
+
+3. Minimum Moves to Equal array Elements 2
+        1. best meeting point
+        2. removing minimum number of magic beans
+        3. minimum cost to make array equal
+        4. minimum operations to make all array elemets equal
+        
+4.  Non-decreasing Array
+        1. make array non decreasing or non Increasing
+        2. find good days to rob the bank 
