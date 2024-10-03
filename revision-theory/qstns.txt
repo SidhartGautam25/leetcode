@@ -72,4 +72,18 @@
        3. solution 2 -> one pass and O(1) space
 
 13.  Non-decreasing Array
-    
+14.  Single Element 2
+       1. bits manupulation
+       2. need to understand better
+15.  Single Element 3
+       1. break down this question into single Element
+
+16. Contiguous Array
+       1. treat one as +1 and 0 as -1
+
+17. Split Array into Consecutive Subsequences
+       --> many questions are like this and follow same concepts like:
+                 1. divide array in sets of k concecutive numbers
+                 2. partition labels
+                 3. queue reconstrution by height
+                 4. Video Stitching
