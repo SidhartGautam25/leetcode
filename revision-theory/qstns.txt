@@ -90,4 +90,6 @@
 
 18. Divide Array in Sets of K Consecutive Numbers
        --> exactly same as hand of straights
-19.
+19. Partition Labels
+       --> partition Problem
+       --> conceptual and unique concept has been applied
