@@ -93,3 +93,6 @@
 19. Partition Labels
        --> partition Problem
        --> conceptual and unique concept has been applied
+
+20. Majority Element
+       --> Boyer–Moore majority vote algorithm 
