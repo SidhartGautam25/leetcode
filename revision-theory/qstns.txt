@@ -95,4 +95,24 @@
        --> conceptual and unique concept has been applied
 
 20. Majority Element
-       --> Boyer–Moore majority vote algorithm 
+       --> Boyer–Moore majority voting algorithm 
+
+21. Majority Element 2
+       --> same algo to majority element 1 with a twist
+
+22. Max Chunks To Make Sorted
+       --> similar to parition labels
+       --> second solution using stack still need more understanding
+
+23. Max Chunks To Make Sorted 2
+       --> same thing as previous one
+
+24. Sort Array By Parity
+       --> first do array partition according to a point
+       --> then sort 0 1
+       --> and this is totallly similar to sort 0 1
+
+25. Sort Colors
+       --> exactly same as sort 0 1 2
+
+26. Smallest Range 1
