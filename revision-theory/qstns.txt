@@ -116,3 +116,5 @@
        --> exactly same as sort 0 1 2
 
 26. Smallest Range 1
+27. Smallest Range 2
+       --> array modification problem
