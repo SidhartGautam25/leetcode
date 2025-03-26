@@ -118,3 +118,5 @@
 26. Smallest Range 1
 27. Smallest Range 2
        --> array modification problem
+28. Pancake sorting
+       --> sort array using technique problem
