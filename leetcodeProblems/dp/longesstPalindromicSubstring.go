@@ -37,7 +37,10 @@ func solutionOne(str string) string {
 
 }
 
+// diagonal dp
 func solutionTwo(str string) string {
+
+	return str
 
 }
 
