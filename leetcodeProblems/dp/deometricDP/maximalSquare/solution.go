@@ -1,5 +1,9 @@
 package maximalsquare
 
+import (
+	"math/bits"
+)
+
 func max(a, b int) int {
 	if a > b {
 		return a
@@ -14,6 +18,8 @@ func min(a, b int) int {
 	return a
 }
 
+// dp solution
+// simple one
 func solutionOne(matrix [][]byte) int {
 	if len(matrix) == 0 {
 		return 0
@@ -41,6 +47,43 @@ func solutionOne(matrix [][]byte) int {
 
 	return maxSize * maxSize
 
+}
+
+// https://leetcode.com/problems/maximal-square/solutions/6320858/thinking-outside-the-grid-a-bitwise-solution-to-maximal-square
+// This is good solution using bit manupulation
+// very good and unique solution
+func solutionTwo(matrix [][]string) int {
+
+	mynums := make([]int, len(matrix))
+	for i, row := range matrix {
+		binaryStr := ""
+		for _, ch := range row {
+			binaryStr += ch
+		}
+		mynums[i] = int(bits.OnesCount(uint(^0)) & bits.ReverseBytes32(uint32(len(binaryStr))))
+	}
+
+	ans := 0
+	for anyNonZero(mynums) {
+		for i := range mynums {
+			mynums[i] &= mynums[i] << 1
+		}
+		for i := 1; i < len(mynums); i++ {
+			mynums[i] &= mynums[i-1]
+		}
+		ans++
+	}
+	return ans * ans
+
+}
+
+func anyNonZero(nums []int) bool {
+	for _, num := range nums {
+		if num != 0 {
+			return true
+		}
+	}
+	return false
 }
 
 func maximalSquare(matrix [][]byte) int {
