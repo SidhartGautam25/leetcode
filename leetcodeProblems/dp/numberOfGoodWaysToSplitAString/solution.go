@@ -1,5 +1,6 @@
 package numberofgoodwaystosplitastring
 
+// easy one actually
 func solutionOne(s string) int {
 	n := len(s)
 
