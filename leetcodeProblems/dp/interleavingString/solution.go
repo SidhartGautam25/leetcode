@@ -57,8 +57,60 @@ func solutionOne(s1 string, s2 string, s3 string) bool {
 
 }
 
+// 1D DP Solution
+func solutionTwo(s1 string, s2 string, s3 string) bool {
+	m := len(s1)
+	n := len(s2)
+
+	if m+n != len(s3) {
+		return false
+	}
+	prev_row_dp := make([]bool, n+1)
+
+	for i := 0; i <= m; i++ {
+		curr_row_dp := make([]bool, n+1)
+		for j := 0; j <= n; j++ {
+			if i == 0 && j == 0 {
+				// base
+				curr_row_dp[j] = true
+			} else if i == 0 {
+				curr_row_dp[j] = curr_row_dp[j-1] && (s2[j-1] == s3[i+j-1])
+			} else if j == 0 {
+				curr_row_dp[j] = prev_row_dp[j] && (s1[i-1] == s3[i+j-1])
+			} else {
+				// three condition again
+				// first --> s1 curr == s3 curr
+				if s1[i-1] == s3[i+j-1] && s2[j-1] != s3[i+j-1] {
+					curr_row_dp[j] = prev_row_dp[j]
+
+				} else if s2[j-1] == s3[i+j-1] && s1[i-1] != s3[i+j-1] {
+					// second --> s2 curr == s3 curr
+					curr_row_dp[j] = curr_row_dp[j-1]
+
+				} else if s1[i-1] == s3[i+j-1] && s2[j-1] == s3[i+j-1] {
+					// third --> s1 curr==s2 curr == s3 curr
+					curr_row_dp[j] = curr_row_dp[j-1] || prev_row_dp[j]
+
+				}
+			}
+		}
+
+		prev_row_dp = curr_row_dp
+
+	}
+	return prev_row_dp[n]
+}
+
 func isInterleave(s1 string, s2 string, s3 string) bool {
 
-	return solutionOne(s1, s2, s3)
+	ans1 := solutionOne(s1, s2, s3)
+	ans2 := solutionTwo(s1, s2, s3)
+
+	sol := "first"
+	if sol == "first" {
+		return ans1
+	}
+
+	return ans2
 
 }
