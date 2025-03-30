@@ -77,6 +77,17 @@ func solutionTwo(matrix [][]string) int {
 
 }
 
+// https://leetcode.com/problems/maximal-square/solutions/6477078/c-monotonic-stack-maximal-rectangle/
+/*
+
+This solution depends on histogram problem
+
+
+*/
+func solutionThree() {
+
+}
+
 func anyNonZero(nums []int) bool {
 	for _, num := range nums {
 		if num != 0 {
