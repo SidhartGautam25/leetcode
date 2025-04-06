@@ -2,6 +2,7 @@ package cheapestflightwithkstops
 
 // simple approach
 // time complexity --> O(k*n)
+// limited bfs type approach
 func solutionOne(n int, flights [][]int, src int, dst int, k int) int {
 	cost := make([]int, n)
 	for i := 0; i < n; i++ {
@@ -39,6 +40,12 @@ func solutionOne(n int, flights [][]int, src int, dst int, k int) int {
 	}
 
 	return cost[dst]
+
+}
+
+// using dijikstra
+// using priority queue
+func solutionTWo(n int, flights [][]int, src int, dst int, k int) int {
 
 }
 
