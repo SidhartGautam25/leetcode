@@ -60,7 +60,7 @@ func solutionTwo(matrix [][]string) int {
 		for _, ch := range row {
 			binaryStr += ch
 		}
-		mynums[i] = int(bits.OnesCount(uint(^0)) & bits.ReverseBytes32(uint32(len(binaryStr))))
+		mynums[i] = int(uint32(bits.OnesCount(uint(^0)) & bits.ReverseBytes32(uint32(len(binaryStr))))
 	}
 
 	ans := 0
